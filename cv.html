@@ -1,0 +1,376 @@
+<!-- cv.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Long Vu – Curriculum Vitae</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --accent: #111;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      margin: 0;
+      padding: 2rem 1.5rem;
+      line-height: 1.4;
+      color: #111;
+      background: #f8f8f8;
+    }
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.06);
+    }
+    header {
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 2px solid #eee;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 0.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .contact {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .contact span {
+      margin-right: 0.75rem;
+      white-space: nowrap;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #333;
+      margin: 1.2rem 0 0.5rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.25rem;
+    }
+    .item {
+      margin-bottom: 0.55rem;
+      font-size: 0.95rem;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: baseline;
+    }
+    .item-title {
+      font-weight: 600;
+    }
+    .item-role {
+      font-style: italic;
+      color: #444;
+    }
+    .item-meta {
+      font-size: 0.85rem;
+      color: #666;
+      white-space: nowrap;
+    }
+    .item-subtitle {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    ul {
+      margin: 0.15rem 0 0.2rem 1.1rem;
+      padding: 0;
+      font-size: 0.95rem;
+    }
+    li {
+      margin-bottom: 0.05rem;
+    }
+    .inline-list {
+      list-style: none;
+      margin-left: 0;
+    }
+    .inline-list li {
+      margin-bottom: 0.15rem;
+    }
+    .references-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+    .ref-block strong {
+      text-transform: none;
+      letter-spacing: 0.02em;
+    }
+    .ref-block em {
+      font-style: italic;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+      .page {
+        padding: 1.5rem 1.25rem;
+        box-shadow: none;
+      }
+      .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .item-meta {
+        white-space: normal;
+      }
+      .contact span {
+        display: block;
+        margin-bottom: 0.2rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .page {
+        box-shadow: none;
+        margin: 0;
+        padding: 0.5in 0.7in;
+      }
+      a[href^="http"]::after {
+        content: "";
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>LONG VU</h1>
+      <div class="contact">
+        <span>(+1) 631-710-0987</span>
+        <span><a href="mailto:longvu.acad@gmail.com">longvu.acad@gmail.com</a></span>
+        <span><a href="https://longvus.github.io/aboutme/">longvus.github.io/aboutme/</a></span>
+      </div>
+    </header>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">University of Illinois Urbana-Champaign</div>
+          <div class="item-meta">May 2025</div>
+        </div>
+        <div class="item-subtitle">NetMath Program</div>
+        <ul>
+          <li>2 classes as a non-degree seeking student (Real Analysis; Partial Differential Equations – in progress)</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Carnegie Mellon University</div>
+          <div class="item-meta">Dec 2023</div>
+        </div>
+        <div class="item-subtitle">M.S. in Computational Finance</div>
+        <ul>
+          <li>Quantitative Finance Masters Program based in New York</li>
+          <li>GPA: 3.38 / 4.00</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">SUNY Stony Brook University</div>
+          <div class="item-meta">Aug 2022</div>
+        </div>
+        <div class="item-subtitle">B.S. in Applied Mathematics and Statistics</div>
+        <ul>
+          <li>Double Major: B.S. in Business Management, Finance concentration</li>
+          <li>GPA: 3.72 / 4.00, <em>Magna Cum Laude</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section id="professional-experience">
+      <h2>Professional Experience</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">SciFeCap LLC</div>
+            <div class="item-role">Quantitative Researcher</div>
+          </div>
+          <div class="item-meta">Feb 2024 – Feb 2025</div>
+        </div>
+        <ul>
+          <li>Developed improved fitting algorithms for volatility surface construction of cryptocurrency options based on the Stochastic Volatility Inspired (SVI) model (Gatheral, 2012) and Local Stochastic Volatility models while enforcing arbitrage-free conditions.</li>
+          <li>Worked on extracting and analyzing risk-neutral distributions from calibrated volatility surfaces.</li>
+          <li>Improved pricing of path-dependent options, including barrier and Asian options, using Euler and Crank–Nicolson finite-difference schemes to solve their associated partial differential equations.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">SciFeCap LLC</div>
+            <div class="item-role">Quantitative Research Intern</div>
+          </div>
+          <div class="item-meta">May 2023 – Aug 2023</div>
+        </div>
+        <ul>
+          <li>Developed algorithms for volatility surface construction using the Heston (1993) stochastic volatility model and the Bates (1996) stochastic volatility model with jump diffusion for cryptocurrency options.</li>
+          <li>Built an option pricing engine for European, Asian, and barrier options using Monte Carlo simulation with Brownian bridge variance-reduction schemes.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ACADEMIC EXPERIENCE -->
+    <section id="academic-experience">
+      <h2>Academic Experience</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">SUNY Korea</div>
+            <div class="item-role">Visiting Researcher, DARPA e-BOSS Program</div>
+          </div>
+          <div class="item-meta">tentative Dec 2025</div>
+        </div>
+        <ul>
+          <li>[Brief description of research focus and responsibilities to be added.]</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ACADEMIC INTERESTS -->
+    <section id="academic-interests">
+      <h2>Academic Interests</h2>
+      <ul class="inline-list">
+        <li><strong>General Topics:</strong> Stochastic Analysis, Stochastic Control, Markov Decision Processes (MDP) and Partially Observable Markov Decision Processes (POMDP), Reinforcement Learning, and topics in Quantitative Finance such as Portfolio Optimization and Options Pricing.</li>
+        <li><strong>Research Directions:</strong> [To be specified.]</li>
+      </ul>
+    </section>
+
+    <!-- FELLOWSHIPS AND AWARDS -->
+    <section id="awards">
+      <h2>Fellowships and Academic Awards</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">SUNY Korea</div>
+          <div class="item-meta">Aug 2018 – Aug 2022</div>
+        </div>
+        <ul>
+          <li>Recipient of merit-based full scholarship for 8 semesters, granted jointly by The State University of New York–Korea and Stony Brook University.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WORK IN PROGRESS -->
+    <section id="work-in-progress">
+      <h2>Work in Progress</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">[Title of working paper or project]</div>
+          <div class="item-meta">[Year]</div>
+        </div>
+        <ul>
+          <li>[1–2 lines summarizing the topic, e.g., continuous-time RL methods for portfolio optimization.]</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities">
+      <h2>Extracurricular Activities, Part-time Employment and Volunteering</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">SUNY Korea – Stony Brook University Program</div>
+            <div class="item-role">Research Volunteer</div>
+          </div>
+          <div class="item-meta">Jul 2025 – Nov 2025</div>
+        </div>
+        <ul>
+          <li>Assisted Professor Zhoulai Fu.</li>
+          <li>Assisted Professor Tan Cao.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Academic Tutor</div>
+            <div class="item-role">Department of Business Management</div>
+          </div>
+          <div class="item-meta">Feb 2020 – Jun 2021</div>
+        </div>
+        <ul>
+          <li>Tutored classes BUS 215 (Intro to Business Statistics) and BUS 220 (Intro to Decision Making) under the Business Management Department.</li>
+          <li>Covered topics including probability, random variables, sampling techniques, confidence intervals, hypothesis testing, and regression; optimization via linear, integer, goal programming, and simulation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>
+        <strong>Mathematics:</strong> [e.g., Stochastic calculus, SDEs, stochastic control, optimization, numerical analysis.]<br>
+        <strong>Computer Science:</strong> [e.g., Python, NumPy, SciPy, PyTorch, C++, Git, Linux.]
+      </p>
+    </section>
+
+    <!-- REFERENCES -->
+    <section id="references">
+      <h2>References</h2>
+      <div class="references-grid">
+        <div class="ref-block">
+          <strong>Dr. Zhoulai Fu</strong><br />
+          <em>Research Associate Professor</em><br />
+          Department of Computer Science<br />
+          Data &amp; Intelligent Computing Lab<br />
+          State University of New York, Korea<br />
+          <a href="mailto:zhoulai.fu@sunykorea.ac.kr">Email: zhoulai.fu@sunykorea.ac.kr</a><br />
+          <a href="https://www.cs.stonybrook.edu/people/faculty/zhoulaifu">
+            Website: www.cs.stonybrook.edu/people/faculty/zhoulaifu
+          </a>
+        </div>
+
+        <div class="ref-block">
+          <strong>Dr. Tan H. Cao</strong><br />
+          <em>Associate Professor, Undergraduate Program Director</em><br />
+          Department of Applied Mathematics and Statistics<br />
+          State University of New York, Korea<br />
+          <a href="mailto:tan.cao@stonybrook.edu">Email: tan.cao@stonybrook.edu</a>
+        </div>
+
+        <div class="ref-block">
+          <strong>Dr. Ki Q. Tran</strong><br />
+          <em>Associate Professor</em><br />
+          Department of Applied Mathematics and Statistics<br />
+          State University of New York, Korea<br />
+          <a href="mailto:ky.tran@stonybrook.edu">Email: ky.tran@stonybrook.edu</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
