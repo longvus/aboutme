@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Long Vu – About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --accent: #111; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      margin: 0;
+      padding: 2rem 1.5rem;
+      line-height: 1.5;
+      color: #111;
+      background: #f8f8f8;
+    }
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.06);
+    }
+    header {
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 2px solid #eee;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 0.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .contact {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .contact span {
+      margin-right: 0.75rem;
+      white-space: nowrap;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    nav {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: var(--accent);
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #333;
+      margin: 1.2rem 0 0.5rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.25rem;
+    }
+    p {
+      margin: 0.3rem 0;
+      font-size: 0.96rem;
+    }
+    .buttons {
+      margin-top: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 0.9rem;
+      font-size: 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #ccc;
+      text-decoration: none;
+      color: var(--accent);
+      margin-right: 0.6rem;
+    }
+    .btn:hover {
+      border-color: #999;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 1.5rem 1rem; }
+      .page {
+        padding: 1.5rem 1.25rem;
+        box-shadow: none;
+      }
+      .contact span {
+        display: block;
+        margin-bottom: 0.2rem;
+      }
+    }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .page { box-shadow: none; margin: 0; padding: 0.5in 0.7in; }
+      a[href^="http"]::after { content: ""; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>LONG VU</h1>
+      <div class="contact">
+        <span>(+1) 631-710-0987</span>
+        <span><a href="mailto:longvu.acad@gmail.com">longvu.acad@gmail.com</a></span>
+        <span><a href="https://github.com/longvus/aboutme">github.com/longvus/aboutme</a></span>
+      </div>
+      <nav>
+        <a href="./">About</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a quantitative researcher and an aspiring applied mathematician with interests in stochastic analysis, 
+        stochastic control, reinforcement learning, and quantitative finance. I am currently working on reinforcement learning
+        approaches for portfolio optimization under partial observations, and has experience with volatility surface modeling and option pricing.
+      </p>
+      <p>
+        This site hosts a web version of my curriculum vitae and related research information.
+      </p>
+      <div class="buttons">
+        <a class="btn" href="cv.html">View CV (HTML)</a>
+        <!-- Optional: once you have a PDF in /files/Long_Vu_CV.pdf -->
+        <!-- <a class="btn" href="files/Long_Vu_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a> -->
+      </div>
+    </section>
+  </div>
+</body>
+</html>
