@@ -1,4 +1,4 @@
-# About Me – Website
+# Website
 
 This repository contains the source for my personal website.
 
